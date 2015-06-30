@@ -1,5 +1,6 @@
 require 'sinatra'
 
+
 # # go to localhost:PORT (127.0.0.1:PORT) and with sinatra, you have a webserver.
 
 # get '/' do
@@ -15,3 +16,6 @@ require 'sinatra'
 # get '/sinatra' do
 # 	"Hello Sinatra"
 # end
+get '/' do
+  send_file 'public/hello.txt'
+end
